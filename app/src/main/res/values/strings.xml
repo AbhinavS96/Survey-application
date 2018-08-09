@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WRHD Survey</string>
+    <string name="nameText">1. Name?</string>
+    <string name="weightText">2. Weight(Kg)?</string>
+    <string name="ageText">4. Age?</string>
+    <string name="literateText">5. Are you literate?</string>
+    <string name="_2_hours_and_4_hours"><![CDATA[> 2 hours and <= 4 hours]]></string>
+    <string name="_4_hours_and_6_hours_hours"><![CDATA[> 4 hours and <= 6 hours hours]]></string>
+    <string name="_2_hours"><![CDATA[<= 2 hours]]></string>
+    <string name="_6_hours"><![CDATA[> 6 hours]]></string>
+    <string name="_2_km"><![CDATA[<= 2 Km]]></string>
+    <string name="_2_km_and_4_km"><![CDATA[> 2 Km and <= 4 Km]]></string>
+    <string name="_4_km_and_6_km"><![CDATA[> 4 Km and <= 6 Km]]></string>
+    <string name="_6_km"><![CDATA[> 6 Km]]></string>
+    <string name="_4_hours"><![CDATA[> 4 hours]]></string>
+    <string name="_30_minutes"><![CDATA[<= 30 minutes]]></string>
+    <string name="_30_minutes_and_1_hour"><![CDATA[> 30 minutes and <= 1 hour]]></string>
+    <string name="_1_hour_and_1_5_hours"><![CDATA[> 1 hour and <= 1.5 hours]]></string>
+    <string name="_1_5_hours"><![CDATA[> 1.5 hours]]></string>
+</resources>

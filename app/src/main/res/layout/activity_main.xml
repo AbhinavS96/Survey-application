@@ -1,0 +1,2271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abc.surveytest.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:text="Section A: Personal details"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:gravity="start|center_vertical"
+                android:text="@string/nameText"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="-35dp"
+                android:gravity="center"
+                android:hint="Enter name here" />
+
+            <TextView
+                android:id="@+id/Textview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="@string/weightText"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="-35dp"
+                android:hint="Enter weight here" />
+
+            <TextView
+                android:id="@+id/Textview4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="3. Height(cm)?"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="-35dp"
+                android:hint="Enter height here" />
+
+            <TextView
+                android:id="@+id/Textview5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="@string/ageText"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_height="50dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="-35dp"
+                android:hint="Enter age here" />
+
+            <TextView
+                android:id="@+id/Textview6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="@string/literateText"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                android:id="@+id/literateYes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Yes"/>
+                <RadioButton
+                android:id="@+id/literateNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="No"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview7a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="6. Years of schooling?"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/education"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_height="50dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="-35dp"
+                android:hint="Enter years here" />
+
+            <TextView
+                android:id="@+id/Textview7b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="7. No. of family members?"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/members"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_height="50dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-35dp"
+                android:hint="Enter number here" />
+
+
+            <TextView
+                android:id="@+id/Textview8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:text="Section B: Work Characteristics"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Textview9a"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="1. How long have you been working?"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/working"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:hint="Enter total experience in years" />
+
+            <TextView
+                android:id="@+id/Textview9"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="2. How long have you been doing your present type of work?"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/experience"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:hint="Enter current experience in years" />
+
+            <TextView
+                android:id="@+id/Textview11"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="3. How many hours do you spend per day on your occupation?"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/hours"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:hint="Enter hours worked" />
+
+            <TextView
+                android:id="@+id/Textview12"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="4. How many days per week are you engaged in your occupation?"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/days"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:hint="Enter days worked" />
+
+
+            <TextView
+                android:id="@+id/Textview14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:text="Section C: Work place assessment"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Textview15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="1. How long you stand/walk on a day?"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/_2_hours"/>
+                <RadioButton
+                android:id="@+id/twoToFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/_2_hours_and_4_hours"/>
+                <RadioButton
+                android:id="@+id/fourToSix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/_4_hours_and_6_hours_hours"/>
+                <RadioButton
+                android:id="@+id/six"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/_6_hours"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview17"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="2. How do you reach the work place?"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                android:id="@+id/walk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="By foot"/>
+                <RadioButton
+                android:id="@+id/other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="By other means"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview18"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="3. Average distance between workplace and current residance?"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                android:id="@+id/twoKm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/_2_km"/>
+                <RadioButton
+                android:id="@+id/twoToFourKm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/_2_km_and_4_km"/>
+                <RadioButton
+                android:id="@+id/fourToSixKm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/_4_km_and_6_km"/>
+                <RadioButton
+                android:id="@+id/sixKm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/_6_km"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview19"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="4. What kind of soil are you working on?"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                android:id="@+id/sandy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Sandy"/>
+                <RadioButton
+                android:id="@+id/clay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Clay"/>
+                <RadioButton
+                android:id="@+id/laterite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Laterite"/>
+                <RadioButton
+                android:id="@+id/alluvial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Alluvial"/>
+                <RadioButton
+                android:id="@+id/otherSoil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Other"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="5. The effect of different risk factors associated with your job on a scale of 0-5?"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/Textview21"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="Sunlight"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"/>
+            <NumberPicker
+                android:id="@+id/sunlight"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview22"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="Fertilisers"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"/>
+            <NumberPicker
+                android:id="@+id/fertiliser"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview23"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="Pesticides"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"/>
+            <NumberPicker
+                android:id="@+id/pesticide"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview24"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="Animals"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"/>
+            <NumberPicker
+                android:id="@+id/animal"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview25"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="Tools"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"/>
+            <NumberPicker
+                android:id="@+id/tool"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview26"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="Others"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"/>
+            <NumberPicker
+                android:id="@+id/others"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="6. How often do you fell mentally exhausted after work?"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                android:id="@+id/Never"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Never"/>
+                <RadioButton
+                android:id="@+id/Occasionally"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Occasionally"/>
+                <RadioButton
+                android:id="@+id/Often"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Often"/>
+                <RadioButton
+                android:id="@+id/Always"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Always"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview13"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="7. How often are you physically exhausted after work?"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/never"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Never"/>
+                <RadioButton
+                    android:id="@+id/occasionally"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Occasionally"/>
+                <RadioButton
+                    android:id="@+id/often"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Often"/>
+                <RadioButton
+                    android:id="@+id/always"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Always"/>
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/Textview28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:text="Section D: Repeated Activity"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Textview29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="1. Are you engaged in repetitive tasks throughout the day?"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                android:id="@+id/repeatYes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Yes"/>
+                <RadioButton
+                android:id="@+id/repeatNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="No"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="2. How long do you do a particular activity continuosly?"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                android:id="@+id/repeatTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/_2_hours"/>
+                <RadioButton
+                android:id="@+id/repeatTwoToFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/_2_hours_and_4_hours"/>
+                <RadioButton
+                android:id="@+id/repeatFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/_4_hours"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="3. Between the work, how long do you rest in total?"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                android:id="@+id/min30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/_30_minutes"/>
+                <RadioButton
+                android:id="@+id/min30to60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/_30_minutes_and_1_hour"/>
+                <RadioButton
+                android:id="@+id/min60to90"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/_1_hour_and_1_5_hours"/>
+                <RadioButton
+                android:id="@+id/min90"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/_1_5_hours"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="4. The difficulty of daily activities associated with your job on a scale of 0-6?"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/Textview33"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="Working with hand hoe"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/hoe"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginStart="235dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview34"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="Working with pickaxe"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/pickaxe"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview35"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="Working with shovel"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/shovel"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview36"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="Working with machette"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/machette"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview37"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="Working with crowbar"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/crowbar"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview38"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="Others"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/otherJob"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview39"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left|center_vertical"
+                android:text="Manual material handling"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/material"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginEnd="20dp" />
+
+
+            <TextView
+                android:id="@+id/Textview40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:text="Section E: Lifestyle"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Textview42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="1. Do you take breakfast before going to work?"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                android:id="@+id/breakfastYes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Yes"/>
+                <RadioButton
+                android:id="@+id/breakfastNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="No"/>
+                <RadioButton
+                android:id="@+id/breakfastSometimes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Sometimes"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="2. Do you take lunch before going to work?"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                android:id="@+id/lunchYes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Yes"/>
+                <RadioButton
+                android:id="@+id/lunchNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="No"/>
+                <RadioButton
+                android:id="@+id/lunchSometimes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Sometimes"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="3. Do you have the habit of using any kinds of tobacco products?"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                android:id="@+id/tobaccoNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="No"/>
+                <RadioButton
+                android:id="@+id/betel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Betel leaf"/>
+                <RadioButton
+                android:id="@+id/pan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Pan masala"/>
+                <RadioButton
+                android:id="@+id/snuff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Snuff"/>
+                <RadioButton
+                android:id="@+id/cigarette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Cigarette"/>
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/Textview45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:text="Section F: Musculoskeletal discomfort"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Textview46a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="1. Have you had any problems previously?"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/BP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="BP"/>
+                <RadioButton
+                    android:id="@+id/diabetes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Diabetes"/>
+                <RadioButton
+                    android:id="@+id/migraine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Migraine"/>
+                <RadioButton
+                    android:id="@+id/arthritis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Arthritis"/>
+                <RadioButton
+                    android:id="@+id/spondylitis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Spondilitis"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="2. Have you had any pain or discomfort during the last 12 months that you believe is related to your work?"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                android:id="@+id/msdYes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="Yes"
+                android:onClick="msdYes"/>
+                <RadioButton
+                android:id="@+id/msdno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:text="No"
+                android:onClick="msdNo"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="For each body part indicate how often you experience pain"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/Textview48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Body part"
+                android:textSize="18sp"
+                android:layout_marginTop="75dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/Textvie49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-20dp"
+                android:gravity="left|center_vertical"
+                android:rotation="-90"
+                android:text="1-7 days"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/Textview50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="-25dp"
+                android:gravity="left|center_vertical"
+                android:rotation="-90"
+                android:text="8-30 days"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/Textview51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-30dp"
+                android:gravity="left|center_vertical"
+                android:rotation="-90"
+                android:text="More than\n  30 days"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/Textview52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="-35dp"
+                android:gravity="left|center_vertical"
+                android:rotation="-90"
+                android:text="Everyday"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Textview54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Neck"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/msdNeck"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="-30dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/msdNeck1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/msdNeck2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdNeck3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdNeck4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Shoulders"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/msdShoulder"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="-30dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/msdShoulder1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/msdShoulder2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdShoulder3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdShoulder4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Elbow"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/msdElbow"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="-30dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/msdElbow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/msdElbow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdElbow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdElbow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Wrist/Hands"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/msdWrist"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="-30dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/msdWrist1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/msdWrist2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdWrist3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdWrist4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Upper back"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/msdUback"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="-30dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/msdUback1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/msdUback2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdUback3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdUback4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Lower back"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/msdLback"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="-30dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/msdLback1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/msdLback2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdLback3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdLback4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Hips/thighs/\nbuttocks"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/msdHip"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="-30dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/msdHip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/msdHip2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdHip3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdHip4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Knees"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/msdKnee"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="-30dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/msdKnee1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/msdKnee2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdKnee3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdKnee4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Ankles/Feet"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:id="@+id/msdAnkle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="-30dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/msdAnkle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/msdAnkle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdAnkle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/msdAnkle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="3. For each body part indicate the pain on a scale of 0-5"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/Textview64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Neck"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/neck"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Shoulders"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/shoulder"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Elbow"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/elbow"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Wrist/Hands"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/wrist"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Upper back"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/uBack"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview69"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Lower back"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/lBack"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Hips/thighs/\nbuttocks"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/hips"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Knees"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/knee"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/Textview72"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Ankles/Feet"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <NumberPicker
+                android:id="@+id/ankle"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="20dp" />
+
+
+            <TextView
+                android:id="@+id/Textview73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:text="Section G: Post injury survey"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Textview74"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="1. Has any type of injury occured?"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp">
+                <RadioButton
+                    android:id="@+id/injuryYes"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="injuryYes"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/injuryNo"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="injuryNo"
+                    android:text="No"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="2. What activity were you doing when you got injured?"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/whatActivity"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp">
+                <RadioButton
+                    android:id="@+id/repeat"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Performing repetitive tasks"/>
+                <RadioButton
+                    android:id="@+id/bend"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bending/ twisting"/>
+                <RadioButton
+                    android:id="@+id/lift"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lifting heavy loads"/>
+                <RadioButton
+                    android:id="@+id/slip"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slipping/ tripping/ falling"/>
+                <RadioButton
+                    android:id="@+id/position"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maintaining a position for a long time"/>
+                <RadioButton
+                    android:id="@+id/cramp"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Working in an awkward or cramped position"/>
+                <RadioButton
+                    android:id="@+id/move"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Responding to unanticipated or sudden movement"/>
+                <RadioButton
+                    android:id="@+id/fatigue"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Working when physcally fatigued"/>
+                <RadioButton
+                    android:id="@+id/injuryOther"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview76"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="3.Did you officialy report the injury?"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/injuryReport"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp">
+                <RadioButton
+                    android:id="@+id/reportYes"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/reportNo"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="4. Did you see a physician for the injury?"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:id="@+id/seePhysician"
+                android:layout_marginTop="5dp">
+                <RadioButton
+                    android:id="@+id/physicianYes"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/physicianNo"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview78"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="5. Did you lose half a day or more of work as a resut of the injury?"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/loseHalf"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp">
+                <RadioButton
+                    android:id="@+id/loseYes"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/loseNo"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview79"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="6. Have you limited your working time as a result of the injury?"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/limitedTime"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp">
+                <RadioButton
+                    android:id="@+id/timeYes"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/timeNo"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="7. Have you limited your area of practice to avoid sustaining another injury?"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/limitedArea"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp">
+                <RadioButton
+                    android:id="@+id/areaYes"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/areaNo"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview81"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="8. What kind of treatment was applied?"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/treatmentApplied"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp">
+                <RadioButton
+                    android:id="@+id/surgical"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Surgical"/>
+                <RadioButton
+                    android:id="@+id/medical"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medical"/>
+                <RadioButton
+                    android:id="@+id/personal"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal knowledge of physical therapy"/>
+                <RadioButton
+                    android:id="@+id/rest"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rest"/>
+                <RadioButton
+                    android:id="@+id/exercises"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exercises"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview82"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="9. Have your symptoms been made worse after treatement?"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/worseSymptoms"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp">
+                <RadioButton
+                    android:id="@+id/symptomYes"
+                    android:textSize="18sp"
+                    android:onClick="symptomYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/symptomNo"
+                    android:textSize="18sp"
+                    android:onClick="symptomNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="If yes, what activity caused your symptoms to reccur?"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/whatSymptoms"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp">
+                <RadioButton
+                    android:id="@+id/Bend"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bending/ twisting"/>
+                <RadioButton
+                    android:id="@+id/Reach"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reaching"/>
+                <RadioButton
+                    android:id="@+id/Transfer"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transferring a load"/>
+                <RadioButton
+                    android:id="@+id/Position"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maintaining a position for a long time"/>
+                <RadioButton
+                    android:id="@+id/Repeat"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Performing repetitive tasks"/>
+                <RadioButton
+                    android:id="@+id/Overhead"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Overhead activities"/>
+                <RadioButton
+                    android:id="@+id/Cramp"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Working in an awkward or cramped position"/>
+                <RadioButton
+                    android:id="@+id/Lift"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lifting"/>
+                <RadioButton
+                    android:id="@+id/Squat"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Squatting"/>
+                <RadioButton
+                    android:id="@+id/Walk"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Walking"/>
+                <RadioButton
+                    android:id="@+id/InjuryOther"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview84"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="10. Has the injury caused you to alter your work habits?"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/workAlter"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp">
+                <RadioButton
+                    android:id="@+id/WorkHabitYes"
+                    android:textSize="18sp"
+                    android:onClick="workAlterYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/WorkHabitNo"
+                    android:textSize="18sp"
+                    android:onClick="workAlterNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="If yes, what activity do you do differently?"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/whatAlter"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp">
+                <RadioButton
+                    android:id="@+id/avoid"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avoid lifting"/>
+                <RadioButton
+                    android:id="@+id/Postion"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change working position frequently"/>
+                <RadioButton
+                    android:id="@+id/schedule"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change in work schedule"/>
+                <RadioButton
+                    android:id="@+id/time"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Increase working time for same output"/>
+                <RadioButton
+                    android:id="@+id/personnel"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Increase use of other personnel"/>
+                <RadioButton
+                    android:id="@+id/stop"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stop working when hurt or when symptoms occur"/>
+                <RadioButton
+                    android:id="@+id/breaks"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Take more rest breaks or pauses during the workday"/>
+                <RadioButton
+                    android:id="@+id/mechanics"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Use improved body mechanics"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Textview86"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="11. Are you considering changing jobs because of injury or because you fear another injury?"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/jobChange"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp">
+                <RadioButton
+                    android:id="@+id/changeYes"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/changeNo"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:text="Save Data"
+                android:onClick="onClickSave"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
